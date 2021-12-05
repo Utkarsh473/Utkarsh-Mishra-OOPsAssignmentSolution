@@ -1,6 +1,10 @@
 package com.greatlearning.departments;
 
+import com.greatlearning.superdepartment.*;
+
 public class AdminDepartment extends SuperDepartment {
+	
+	// creating constructor of AdminDepartment class which will call methods
 	public AdminDepartment()
 	{
 		System.out.println("Welcome to" + this.departmentName());
@@ -9,17 +13,20 @@ public class AdminDepartment extends SuperDepartment {
 		System.out.println(super.isTodayAHoliday()+ "\n");
 	}
 	
-	String departmentName()
+	// Method to display department name
+	public String departmentName()
 	{
 		return (" Admin Department ");
 	}
 	
-	String getTodaysWork()
+	// Method to display the work assigned for today
+	public String getTodaysWork()
 	{
 		return ("Complete your documents Submission");
 	}
 	
-	String getWorkDeadline()
+	// Method to display the deadline to complete the work
+	public String getWorkDeadline()
 	{
 		return ("Complete by EOD ");
 	}

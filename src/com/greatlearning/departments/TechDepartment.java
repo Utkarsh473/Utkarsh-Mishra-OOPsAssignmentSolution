@@ -1,8 +1,12 @@
 package com.greatlearning.departments;
 
+import com.greatlearning.superdepartment.SuperDepartment;
+
 public class TechDepartment extends SuperDepartment {
 		
-		public TechDepartment() {
+	// creating constructor of TechDepartment class which will call methods
+	public TechDepartment() 
+	{
 		System.out.println("Welcome to" + this.departmentName());
 		System.out.println(this.getTodaysWork());
 		System.out.println(this.getWorkDeadline());
@@ -10,22 +14,26 @@ public class TechDepartment extends SuperDepartment {
 		System.out.println(super.isTodayAHoliday()+ "\n");
 	}
 
-	String departmentName()
+	// Method to display department name
+	public String departmentName()
 	{
 		return (" Tech Department ");
 	}
 	
-	String getTodaysWork()
+	// Method to display the work assigned for today
+	public String getTodaysWork()
 	{
 		return ("Complete coding of module 1");
 	}
 	
-	String getWorkDeadline()
+	// Method to display the deadline to complete the work
+	public String getWorkDeadline()
 	{
 		return ("Complete by EOD ");
 	}
 	
-	String getTechStackInformation()
+	// Method to display the Tech stack
+	public String getTechStackInformation()
 	{
 		return ("core Java");
 	}
